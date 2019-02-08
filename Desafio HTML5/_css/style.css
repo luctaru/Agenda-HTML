@@ -1,0 +1,106 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css?family=Comfortaa|Merienda');
+
+/*
+font-family: 'Comfortaa', cursive;
+font-family: 'Merienda', cursive;
+*/
+
+body{
+    background-color: rgba(216, 212, 218, 0.5);
+    font-family: 'Comfortaa', cursive;
+}
+
+header{
+    display: flex;
+    padding: 3px;
+    margin: auto;
+    font-family: 'Merienda', cursive;
+    background-color:  #ff4d4d;
+    color: black;
+    border-radius: 30px;
+    box-shadow: 3px 3px 3px black;
+}
+
+nav{
+    display: block;
+}
+
+nav ul{
+    display: block;
+    font-family: 'Comfortaa', cursive;
+    list-style: none;
+    text-transform: uppercase;
+
+   color: black;
+   padding: 5px;
+}
+
+nav ul li{
+    display: inline-block;
+    background-color: #dddddd;
+    padding: 10px;
+    margin: 2px;
+    border-radius: 10px;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
+    box-shadow: 1px 1px 1px black;
+}
+
+nav ul li:hover{
+    background-color: black;
+    color: white;
+}
+
+
+
+#fav-list{
+    background-color: #ffff80;
+}
+
+#add-list{
+    background-color:  #80ff80;
+}
+
+#fav-list:hover, #add-list:hover{
+    background-color: black;
+}
+
+form{
+    display:flex;
+    margin: auto auto auto 45%;
+    
+}
+
+#iSearch{
+    margin: 3px;
+    padding: 3px;
+    height: 20px;
+}
+
+#buttonSearch{
+    cursor: pointer;
+    background-color: #606060;
+  border: none;
+  color: white;
+  font-size: 13pt;
+  box-shadow: 2px 2px 2px black;
+}
+
+table{
+    border: 1px solid #606060;
+    border-spacing: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table td{
+    border: 1px solid #606060;
+    padding: 10px 100% 10px 10px;
+    text-align: left;
+    vertical-align: middle; 
+}
