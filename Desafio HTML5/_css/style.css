@@ -76,6 +76,8 @@ nav ul li{
 #fav-list a, #all-list a, #add-list a, #edit-list a{
     text-decoration: none;
     color: whitesmoke;
+     /* border: 1px solid red;  */
+    padding: 10px;
 }
 
 nav ul li:hover{
@@ -221,7 +223,11 @@ img:hover{
     cursor: pointer;
 }
 
-img:active{
+.star-check{
+    display: none;
+}
+
+.star-check:checked~label{
     background-color: yellow;
 }
 
