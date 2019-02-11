@@ -8,7 +8,7 @@ font-family: 'Merienda', cursive;
 */
 
 body{
-    background-color: rgba(216, 212, 218, 0.5);
+    background-color:  rgba(31, 8, 18, .8);
     font-family: 'Comfortaa', cursive;
 }
 
@@ -17,10 +17,31 @@ header{
     padding: 3px;
     margin: auto;
     font-family: 'Merienda', cursive;
-    background-color:  #ff4d4d;
-    color: black;
+    background-color:  rgba(31, 8, 18, .9);
+    color: whitesmoke;
     border-radius: 30px;
     box-shadow: 3px 3px 3px black;
+}
+
+header h1{
+    margin: auto;
+}
+
+h1 a{
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+#form{
+    margin: auto;
+}
+
+div{
+    border: none;
+    margin-top: 50px;
+    padding: 5px;
+    background-color: rgba(213, 229, 215, .8);
+    box-shadow: 3px 3px 3px 3px black;
 }
 
 nav{
@@ -39,7 +60,8 @@ nav ul{
 
 nav ul li{
     display: inline-block;
-    background-color: #dddddd;
+    background-color: #4c2332;
+    color: whitesmoke;
     padding: 10px;
     margin: 2px;
     border-radius: 10px;
@@ -51,23 +73,38 @@ nav ul li{
     box-shadow: 1px 1px 1px black;
 }
 
-nav ul li:hover{
-    background-color: black;
-    color: white;
+#fav-list a, #all-list a, #add-list a, #edit-list a{
+    text-decoration: none;
+    color: whitesmoke;
 }
 
+nav ul li:hover{
+    background-color: #e4959e;
+    color: black;
+}
 
-
-#fav-list{
+#fav-list:hover{
     background-color: #ffff80;
 }
 
-#add-list{
+#fav-list:hover a, #all-list:hover a, #add-list:hover a, #edit-list:hover a{
+    color: black;
+}
+
+#add-list:hover{
     background-color:  #80ff80;
 }
 
-#fav-list:hover, #add-list:hover{
-    background-color: black;
+#rm-list:hover{
+    background-color:  #ff4d4d;
+}
+
+#edit-list:hover{
+    background-color: #56cbf9;
+}
+
+#fav-list:hover, #add-list:hover, #rm-list:hover, #edit-list:hover{
+    cursor: pointer;
 }
 
 form{
@@ -76,31 +113,148 @@ form{
     
 }
 
+#pSearch{
+    display: inline;
+}
+
 #iSearch{
     margin: 3px;
     padding: 3px;
     height: 20px;
+    font-size: 13pt;
+    width: 50%;
 }
 
 #buttonSearch{
+    display: inline-block;
+    border-radius: 4px;
     cursor: pointer;
-    background-color: #606060;
-  border: none;
-  color: white;
-  font-size: 13pt;
-  box-shadow: 2px 2px 2px black;
+    background-color: #d5e5d7;
+    border: none;
+    color: black;
+    font-size: 14pt;
+    box-shadow: 2px 2px 2px black;
+    font-family: 'Comfortaa', cursive;
+    height: 30px;
+    transition: all 0.5s;
 }
 
+#buttonSearch span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  #buttonSearch span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  #buttonSearch:hover span {
+    padding-right: 25px;
+  }
+  
+  #buttonSearch:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
 table{
-    border: 1px solid #606060;
+    border: 1px solid black;
     border-spacing: 0px;
     margin-left: auto;
     margin-right: auto;
+    width: 95%;
 }
 
 table td{
-    border: 1px solid #606060;
-    padding: 10px 100% 10px 10px;
+    border: 1px solid black;
+    padding: 5px 20px 5px 20px;
     text-align: left;
     vertical-align: middle; 
+    background-color: #efdae6;
 }
+
+td a{
+    width: 100%;
+
+  display: block;
+  text-decoration: none;
+  color: black;
+  transition: 0.5s;
+}
+
+td a:hover{
+    background-color: rgba(228, 149, 158, 0.8);
+}
+
+#fRow td{
+    background-color: rgba(209, 17, 73, .9);
+}
+
+.hiddenRow{
+    display: none;
+}
+
+.col0{
+    width: 4%;
+}
+
+.col2{
+    width: 35%;
+}
+
+.col3{
+    width: 30%;
+}
+
+.col4{
+    width: 4%;
+}
+
+img:hover{
+    cursor: pointer;
+}
+
+img:active{
+    background-color: yellow;
+}
+
+#bMore{
+    display: block;
+    margin: 30px auto;
+    padding: 5px;
+    font-family: 'Comfortaa', cursive; 
+    font-size: 15pt;
+    background-color: #9e3d4d;
+    border-radius: 10px;
+    -webkit-transition: background-color 1s;
+    -moz-transition: background-color 1s;
+    -ms-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
+    box-shadow: 1px 1px 1px black;
+    border:none;
+    cursor: pointer;
+}
+
+#bMore:hover{
+    background-color: #ffbaba   ;
+}
+
+    @media only screen and (max-width: 700px) {
+        #pSearch{
+            display: none;
+        }
+    }
+
+  @media only screen and (max-width: 600px) {
+    .col2, .col3{
+        display: none;
+    }
+  }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>AGENDAKI</title>
+    <link rel="stylesheet" type="text/css" href="_css/style.css" />
+</head>
+
+<body>
+<header>
+        <h1><a href="index.html">AGENDAKI</a></h1>
+        <form>
+                <p id="pSearch"><label for="iSearch">Pesquisar:</label><input type="text" name="nSearch" id="iSearch" size="50" maxlength="50" placeholder="Digite o nome do contato..."/><button id="buttonSearch" type="submit"><span><i>Procurar</i></span></button></p>
+            </form>
+            
+</header>
+<div>
+    <nav id="org">
+            <h2>Contatos:</h2>
+            <ul>
+                <li id="all-list"><a href="index.html">Todos</a></li>
+                <li id="fav-list"><a href="fav.html">Favoritos</a></li>
+                <li id="add-list"><a href="add.html">Adicionar</a></li>
+                <li id="rm-list">Deletar</li>
+            </ul>
+    </nav>
+    <section>
+        <table>
+
+            
+            <tr id="fRow"><td class="col0"><input class="check" type="checkbox"/><td colspan="2">Nome</td><td class="col2">Sobrenome</td><td class="col3">E-mail</td></tr>
+            <tr class="userRow"><td class="col0"><input class="check" type="checkbox"/></td class="col1"><td class="col4"><img src="_img/star.png" style="background-color: yellow"/></td><td><a href="contact.html">Pessoa 2</a></td><td class="col2">a</td><td class="col3">a</td></tr>
+            <tr class="userRow"><td class="col0"><input class="check" type="checkbox"/></td class="col1"><td class="col4"><img src="_img/star.png" style="background-color: yellow"/></td><td><a href="contact.html">Pessoa 8</a></td><td class="col2">a</td><td class="col3">a</td></tr>
+            <tr class="userRow"><td class="col0"><input class="check" type="checkbox"/></td class="col1"><td class="col4"><img src="_img/star.png" style="background-color: yellow"/></td><td><a href="contact.html">Pessoa 9</a></td><td class="col2">a</td><td class="col3">a</td></tr>
+        
+        </table>
+        <input id="bMore" type="button" value="Mais..."/>
+    </section>
+</div>
+</body> 
+
+</html>

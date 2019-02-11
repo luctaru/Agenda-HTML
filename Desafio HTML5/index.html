@@ -9,24 +9,50 @@
 
 <body>
 <header>
-        <h1>AGENDAKI</h1>
+        <h1><a href="index.html">AGENDAKI</a></h1>
         <form>
-                <p><label for="iSearch">Pesquisar:</label><input type="text" name="nSearch" id="iSearch" size="50" maxlength="50" placeholder="Digite o nome do contato..."/><button id="buttonSearch" type="submit"><i>Procurar</i></button></p>
+                <p id="pSearch"><label for="iSearch">Pesquisar:</label><input type="text" name="nSearch" id="iSearch" size="50" maxlength="50" placeholder="Digite o nome do contato..."/><button id="buttonSearch" type="submit"><span><i>Procurar</i></span></button></p>
             </form>
+            
 </header>
+<div>
     <nav id="org">
             <h2>Contatos:</h2>
             <ul>
-                <li>Todos</li>
-                <li id="fav-list">Favoritos</li>
-                <li id="add-list">Adicionar</li>
+                <li id="all-list"><a href="index.html">Todos</a></li>
+                <li id="fav-list"><a href="fav.html">Favoritos</a></li>
+                <li id="add-list"><a href="add.html">Adicionar</a></li>
+                <li id="rm-list">Deletar</li>
             </ul>
     </nav>
     <section>
         <table>
-            <tr><td>Nome</td><td>Sobrenome</td><td>E-mail</td></tr>
+
+            
+            <tr id="fRow"><td class="col0"><input class="check" type="checkbox"/><td colspan="2">Nome</td><td class="col2">Sobrenome</td><td class="col3">E-mail</td></tr>
+
+            <tr class="userRow"><td class="col0"><input class="check" type="checkbox"/></td class="col1"><td class="col4"><img src="_img/star.png"/></td><td><a href="contact.html">Pessoa 1</a></td><td class="col2">a</td><td class="col3">a</td></tr>
+            <tr class="userRow"><td class="col0"><input class="check" type="checkbox"/></td class="col1"><td class="col4"><img src="_img/star.png" style="background-color: yellow"/></td><td><a href="contact.html">Pessoa 2</a></td><td class="col2">a</td><td class="col3">a</td></tr>
+            <tr class="userRow"><td class="col0"><input class="check" type="checkbox"/></td class="col1"><td class="col4"><img src="_img/star.png"/></td><td><a href="contact.html">Pessoa 3</a></td><td class="col2">a</td><td class="col3">a</td></tr>
+            <tr class="userRow"><td class="col0"><input class="check" type="checkbox"/></td class="col1"><td class="col4"><img src="_img/star.png"/></td><td><a href="contact.html">Pessoa 4</a></td><td class="col2">a</td><td class="col3">a</td></tr>
+            <tr class="userRow"><td class="col0"><input class="check" type="checkbox"/></td class="col1"><td class="col4"><img src="_img/star.png"/></td><td><a href="contact.html">Pessoa 5</a></td><td class="col2">a</td><td class="col3">a</td></tr>
+            
+            <tr class="userRow"><td class="col0"><input class="check" type="checkbox"/></td class="col1"><td class="col4"><img src="_img/star.png"/></td><td><a href="contact.html">Pessoa 6</a></td><td class="col2">a</td><td class="col3">a</td></tr>
+            <tr class="userRow"><td class="col0"><input class="check" type="checkbox"/></td class="col1"><td class="col4"><img src="_img/star.png"/></td><td><a href="contact.html">Pessoa 7</a></td><td class="col2">a</td><td class="col3">a</td></tr>
+            <tr class="userRow"><td class="col0"><input class="check" type="checkbox"/></td class="col1"><td class="col4"><img src="_img/star.png" style="background-color: yellow"/></td><td><a href="contact.html">Pessoa 8</a></td><td class="col2">a</td><td class="col3">a</td></tr>
+            <tr class="userRow"><td class="col0"><input class="check" type="checkbox"/></td class="col1"><td class="col4"><img src="_img/star.png" style="background-color: yellow"/></td><td><a href="contact.html">Pessoa 9</a></td><td class="col2">a</td><td class="col3">a</td></tr>
+            <tr class="userRow"><td class="col0"><input class="check" type="checkbox"/></td class="col1"><td class="col4"><img src="_img/star.png"/></td><td><a href="contact.html">Pessoa 10</a></td><td class="col2">a</td><td class="col3">a</td></tr>
+
+            <tr class="hiddenRow"><td class="col0"><input type="checkbox"/></td class="col1"><td>a</td><td class="col2">a</td><td class="col3">a</td><td class="col4"><img src="_img/star.png"/></td></tr>
+            <tr class="hiddenRow"><td class="col0"><input type="checkbox"/></td class="col1"><td>a</td><td class="col2">a</td><td class="col3">a</td><td class="col4"><img src="_img/star.png"/></td></tr>
+            <tr class="hiddenRow"><td class="col0"><input type="checkbox"/></td class="col1"><td>a</td><td class="col2">a</td><td class="col3">a</td><td class="col4"><img src="_img/star.png"/></td></tr>
+            <tr class="hiddenRow"><td class="col0"><input type="checkbox"/></td class="col1"><td>a</td><td class="col2">a</td><td class="col3">a</td><td class="col4"><img src="_img/star.png"/></td></tr>
+            <tr class="hiddenRow"><td class="col0"><input type="checkbox"/></td class="col1"><td>a</td><td class="col2">a</td><td class="col3">a</td><td class="col4"><img src="_img/star.png"/></td></tr>
+        
         </table>
+        <input id="bMore" type="button" value="Mais..."/>
     </section>
-</body>
+</div>
+</body> 
 
 </html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>AGENDAKI</title>
+    <link rel="stylesheet" type="text/css" href="_css/style.css" />
+    <link rel="stylesheet" type="text/css" href="_css/form.css" />
+    <link rel="stylesheet" type="text/css" href="_css/cont.css" />
+</head>
+
+<body>
+<header>
+        <h1><a href="index.html">AGENDAKI</a></h1>
+        <form>
+                <p id="pSearch"><label for="iSearch">Pesquisar:</label><input type="text" name="nSearch" id="iSearch" size="50" maxlength="50" placeholder="Digite o nome do contato..."/><button id="buttonSearch" type="submit"><span><i>Procurar</i></span></button></p>
+            </form>
+            
+</header>
+<div>
+    <nav id="org">
+            <h2>Contatos:</h2>
+            <ul>
+                <li id="all-list"><a href="index.html">Todos</a></li>
+                <li id="fav-list"><a href="fav.html">Favoritos</a></li>
+                <li id="add-list"><a href="add.html">Adicionar</a></li>
+                <li id="rm-list">Deletar</li>
+                <li id="edit-list"><a href="edit.html">Editar</a></li>
+            </ul>
+    </nav>
+    <form method="POST" id="form-add" action="mailto:lucas.tarumoto@forlogic.net" oninput="calctotal()">
+            <fieldset id="iPerson">
+                <legend>Dados Pessoais</legend>
+                <p><label for="iName">Nome: </label><input type="text" name="nNome" id="iNome" size="20"
+                        maxlength="30" value="Pessoa 1" disabled/></p>
+                        <p><label for="iSurname">Sobrenome: </label><input type="text" name="nSurname" id="iSurname" size="20"
+                            maxlength="30" value="Sobrenome 1" disabled/></p>
+                <p><label for="iEmail">E-mail: </label><input type="email" name="nEmail" id="iEmail" size="20"
+                        maxlength="40" value="pessoa1@email.com" disabled/></p>
+                <fieldset id="genre">
+                    <legend>Sexo</legend>
+                    <input type="radio" name="nGenre" id="iMale" checked disabled/><label for="iMale">Masculino</label><br />
+                    <input type="radio" name="nGenre" id="iMale" disabled/><label for="iMale">Feminino</label>
+                </fieldset>
+
+                <p><label for="iData">Data de Nascimento: </label><input type="date" name="nData" id="iData" value="1996-03-06" disabled/></p>
+            </fieldset>
+
+            <fieldset id="iAddress">
+                <legend>Endereço</legend>
+                <p><label for="iStreet">Logradouro: </label><input type="text" name="nStreet" id="iStreet" size="40" max="80"
+                        value="Rua dos Bobos" disabled/></p>
+                <p><label for="iNum">Número: </label><input type="number" name="nNum" id="iNum" min="0" max="99999" value="0" disabled/></p>
+                <p><label for="iState">Estado: </label><select name="nState" id="iState" disabled>
+                        <optgroup label="Regiao Sul">
+                            <option value="SC">Santa Catarina</option>
+                            <option value="RS">Rio Grande do Sul</option>
+                            <option value="PR">Paraná</option>
+                        </optgroup>
+                        <optgroup label="Sudeste">
+                            <option value="SP">São Paulo</option>
+                            <option value="RJ">Rio de Janeiro</option>
+                            <option value="ES">Espírito Santo</option>
+                            <option value="MG">Minas Gerais</option>
+                        </optgroup>
+                        <optgroup label="Centro-Oeste">
+                                <option value="GO">Goiás</option>
+                                <option value="MT">Mato Grosso</option>
+                                <option value="MS">Mato Grosso do Sul</option>
+                        </optgroup>
+                        <optgroup label="Nordeste">
+                                <option value="CE">Ceará</option>
+                                <option value="AL">Alagoas</option>
+                                <option value="BA">Bahia</option>
+                                <option value="MA">Maranhão</option>
+                                <option value="PI">Piauí</option>
+                                <option value="RN">Rio Grande do Norte</option>
+                                <option value="PB">Paraíba</option>
+                                <option value="PE">Pernambuco</option>
+                                <option value="SE">Sergipe</option>
+                        </optgroup>
+                        <optgroup label="Norte">
+                                <option value="AM">Amazonas</option>
+                                <option value="AC">Acre</option>
+                                <option value="RO">Rondônia</option>
+                                <option value="RR">Roraima</option>
+                                <option value="AP">Amapá</option>
+                                <option value="PA">Pará</option>
+                                <option value="TO">Tocantins</option>
+                        </optgroup>
+                    </select></p>
+                <p><label for="iCity">Cidade: </label><input type="text" name="nCity" id="iCity" maxlength="40" size="20" value="Cornélio" list="cidades" disabled/></p>
+                <datalist id="city">
+                    <option value="São Paulo"></option>
+                    <option value="Cornélio Procópio"></option>
+                    <option value="Curitiba"></option>
+                </datalist>
+            </fieldset>
+
+            <fieldset id="iComment">
+                    <legend>Anotações</legend>
+                    <p><label for="iMsg">Comentário: </label><textarea name="nMsg" id="iMsg" cols="35" rows="5" disabled>ALGUM COMENTÁRIO</textarea></p>
+                </fieldset>
+</div>
+</body> 
+
+</html>
