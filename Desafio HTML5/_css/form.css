@@ -1,26 +1,81 @@
 #form-add{
-    width: 500px;
+    max-width: 500px;
     margin: auto;
     display: block;
 }
 
 fieldset{
     border-color: #9e3d4d;
+    margin-bottom: 20px;
 }
 
 fieldset input, textarea, select{
     border-radius: 5px;
 }
 
-input{
-    font-size: 13pt;
+fieldset p{
+    margin-left: 12%;
 }
 
-#iPerson, #iAddress, #iComment{
-    margin-bottom: 20px;
+input, select{
+    font-size: 13pt;
+    width: 50%;
+    margin: auto;
 }
 
 legend{
     font-weight: bold;
     font-size: 13pt;
+}
+
+area {
+    display: inline;
+    cursor: pointer;
+    background-color: yellow;
+}
+
+@media only screen and (max-width: 600px) {
+    fieldset{
+        border:none;
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+input[type=radio]{
+    width: 10%;
+}
+
+@media only screen and (max-width: 700px) {
+    fieldset input, select{
+        width: 12em;
+        height: 2em;
+    }
+
+    #buttonSearch{
+        width: 6em;
+        height: 2em;
+    }
+
+    fieldset input[type=radio]{
+        width: 1.5em;
+        height: 1.5em;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    fieldset input, select{
+        width: 12em;
+        height: 2em;
+    }
+
+    #buttonSearch{
+        width: 6em;
+        height: 2em;
+    }
+
+    fieldset input[type=radio]{
+        width: 1.5em;
+        height: 1.5em;
+    }
 }
