@@ -32,7 +32,7 @@ h1 a{
     color: whitesmoke;
 }
 
-#div{
+.div{
     display: block;
     border: none;
     margin-top: 50px;
@@ -247,6 +247,24 @@ td a:hover{
 
 #bMore:hover{
     background-color: #ffbaba   ;
+}
+
+.rodape{
+    clear: both;
+    padding: 5px;
+}
+
+.rodape p{
+    text-align: center;
+}
+
+.rodape a{
+    text-decoration: none;
+    color: black;
+}
+
+.rodape a:hover{
+    color: white;
 }
 
     @media only screen and (max-width: 700px) {

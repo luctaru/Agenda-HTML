@@ -13,19 +13,21 @@
     <header>
         <h1><a href="index.html">AGENDAKI</a></h1>
     </header>
-    <div>
+    <div class="div">
         <nav id="org">
             <h2>Contatos:</h2>
             <ul>
                 <li class="list" id="all-list"><a href="index.html">Todos</a></li>
-                <li class="list" id="fav-list"><a href="fav.html">Favoritos</a></li>
+                <li class="list" id="fav-list"><a href="fav.html">Favoritos
+                        <img src="_img/star-fav-icon.png" /></a>
+                </li>
             </ul>
         </nav>
         <form method="POST" id="form-add" action="mailto:lucas.tarumoto@forlogic.net">
             <fieldset id="iPerson">
                 <legend>Dados Pessoais</legend>
                 <p><img id="cont-img" src="_img/cont-logo.png">
-                    <img id="add-img" src="_img/cam-icon.png"/>
+                    <img id="add-img" src="_img/cam-icon.png" />
                 </p>
                 <p><label for="iName">Nome:</label><br />
                     <input type="text" name="nNome" id="iNome" size="35" maxlength="35" />
@@ -123,6 +125,11 @@
             </button>
         </form>
     </div>
+    <footer class="rodape">
+        <p>Copyright &copy; 2019 - by Anonymous<br />
+            <a href="" target="_blank">Facebook</a> | <a href="" target="_blank">Twitter</a>
+        </p>
+    </footer>
 </body>
 
 </html>

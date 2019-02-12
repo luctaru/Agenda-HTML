@@ -1,91 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>AGENDAKI</title>
-        <link rel="stylesheet" type="text/css" href="_css/style.css" />
-    </head>
 
-    <body>
-        <header>
-            <h1><a href="index.html">AGENDAKI</a></h1>
-        </header>
-        <div>
-            <nav id="org">
-                <h2>Contatos:</h2>
-                <ul>
-                    <li class="list" id="all-list"><a href="index.html">Todos</a></li>
-                    <li class="list" id="fav-list"><a href="fav.html">Favoritos</a></li>
-                    <li class="list" id="add-list"><a href="add.html">Adicionar</a></li>
-                    <li class="list" id="rm-list">Deletar</li>
-                </ul>
-            </nav>
-            <form class="search">
-                <input type="text" name="nSearch" id="iSearch" size="50" maxlength="50"
-                    placeholder="Digite o nome do contato..." />
-                <button class="ani-button" type="submit">
-                    <span><i>Procurar</i></span>
-                </button>
-            </form>
-            <section>
-                <table>
-                    <tr id="fRow">
-                        <td class="col0"><input class="check" type="checkbox" />
-                        </td>
-                        <td colspan="2">Nome
-                        </td>
-                        <td class="col2">Sobrenome
-                        </td>
-                        <td class="col3">E-mail
-                        </td>
-                    </tr>
-                    <tr class="userRow">
-                        <td class="col0"><input class="check" type="checkbox" />
-                        </td>
-                        <td class="col4">
-                            <input class="star-check" id="star-check11" type="checkbox" checked />
-                            <label for="star-check11"><img class="star-img" src="_img/star.png" /></label>
-                        </td>
-                        <td><a href="contact.html">Pessoa 2</a>
-                        </td>
-                        <td class="col2">a
-                        </td>
-                        <td class="col3">a
-                        </td>
-                    </tr>
-                    <tr class="userRow">
-                        <td class="col0">
-                            <input class="check" type="checkbox" />
-                        </td>
-                        <td class="col4">
-                            <input class="star-check" id="star-check12" type="checkbox" checked />
-                            <label for="star-check12"><img class="star-img" src="_img/star.png" /></label>
-                        </td>
-                        <td><a href="contact.html">Pessoa 8</a>
-                        </td>
-                        <td class="col2">a
-                        </td>
-                        <td class="col3">a
-                        </td>
-                    </tr>
-                    <tr class="userRow">
-                        <td class="col0"><input class="check" type="checkbox" />
-                        </td>
-                        <td class="col4">
-                            <input class="star-check" id="star-check13" type="checkbox" checked />
-                            <label for="star-check13"><img class="star-img" src="_img/star.png" /></label>
-                        </td>
-                        <td><a href="contact.html">Pessoa 9</a>
-                        </td>
-                        <td class="col2">a
-                        </td>
-                        <td class="col3">a
-                        </td>
-                    </tr>
-                </table>
-                <input id="bMore" type="button" value="Mais..." />
-            </section>
-        </div>
-    </body>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGENDAKI</title>
+    <link rel="stylesheet" type="text/css" href="_css/style.css" />
+</head>
+
+<body>
+    <header>
+        <h1><a href="index.html">AGENDAKI</a></h1>
+    </header>
+    <div class="div">
+        <nav id="org">
+            <h2>Contatos:</h2>
+            <ul>
+                <li class="list" id="all-list"><a href="index.html">Todos</a></li>
+                <li class="list" id="fav-list"><a href="fav.html">Favoritos <img src="_img/star-fav-icon.png" /></a>
+                </li>
+                <li class="list" id="rm-list">Deletar <img src="_img/x-icon.png" /></a></li>
+            </ul>
+        </nav>
+        <form class="search">
+            <input type="text" name="nSearch" id="iSearch" size="50" maxlength="50"
+                placeholder="Digite o nome do contato..." />
+            <button class="ani-button" type="submit">
+                <span><i>Procurar</i></span>
+            </button>
+        </form>
+        <section>
+            <table>
+                <tr id="fRow">
+                    <td class="col0"><input class="check" type="checkbox" />
+                    </td>
+                    <td colspan="2">Nome
+                    </td>
+                    <td class="col2">Sobrenome
+                    </td>
+                    <td class="col3">E-mail
+                    </td>
+                </tr>
+                <tr class="userRow">
+                    <td class="col0"><input class="check" type="checkbox" />
+                    </td>
+                    <td class="col4">
+                        <input class="star-check" id="star-check11" type="checkbox" checked />
+                        <label for="star-check11"><img class="star-img" src="_img/star.png" /></label>
+                    </td>
+                    <td><a href="contact.html">Pessoa 2</a>
+                    </td>
+                    <td class="col2">a
+                    </td>
+                    <td class="col3">a
+                    </td>
+                </tr>
+                <tr class="userRow">
+                    <td class="col0">
+                        <input class="check" type="checkbox" />
+                    </td>
+                    <td class="col4">
+                        <input class="star-check" id="star-check12" type="checkbox" checked />
+                        <label for="star-check12"><img class="star-img" src="_img/star.png" /></label>
+                    </td>
+                    <td><a href="contact.html">Pessoa 8</a>
+                    </td>
+                    <td class="col2">a
+                    </td>
+                    <td class="col3">a
+                    </td>
+                </tr>
+                <tr class="userRow">
+                    <td class="col0"><input class="check" type="checkbox" />
+                    </td>
+                    <td class="col4">
+                        <input class="star-check" id="star-check13" type="checkbox" checked />
+                        <label for="star-check13"><img class="star-img" src="_img/star.png" /></label>
+                    </td>
+                    <td><a href="contact.html">Pessoa 9</a>
+                    </td>
+                    <td class="col2">a
+                    </td>
+                    <td class="col3">a
+                    </td>
+                </tr>
+            </table>
+            <input id="bMore" type="button" value="Mais..." />
+        </section>
+    </div>
+    <footer class="rodape">
+        <p>Copyright &copy; 2019 - by Anonymous<br />
+            <a href="" target="_blank">Facebook</a> | <a href="" target="_blank">Twitter</a>
+        </p>
+    </footer>
+</body>
+
 </html>
