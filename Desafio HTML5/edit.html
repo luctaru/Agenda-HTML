@@ -27,16 +27,15 @@
             <form method="POST" id="form-add" action="mailto:lucas.tarumoto@forlogic.net">
                 <fieldset id="iPerson">
                     <legend>Dados Pessoais</legend>
+                    <p><img id="cont-img" src="_img/cont-logo.png">
+                        <img id="add-img" src="_img/cam-icon.png"/>
+                    </p>
                     <p><label for="iName">Nome:</label><br />
                         <input type="text" name="nNome" id="iNome" size="35" maxlength="35" value="Pessoa 1"/>
                     </p>
                     <p><label for="iSurname">Sobrenome:</label><br />
                         <input type="text" name="nSurname" id="iSurname" size="35" maxlength="35" 
                         value="Sobrenome 1"/>
-                    </p>
-                    <p><label for="iEmail">E-mail:</label><br />
-                        <input type="email" name="nEmail" id="iEmail" size="35" maxlength="40" 
-                        value="pessoa1@email.com"/>
                     </p>
                     <p>Sexo:<br /><br />
                         <input type="radio" name="nGenre" id="iMale" checked/>
@@ -47,8 +46,12 @@
                     <p><label for="iData">Data de Nascimento:</label><br />
                         <input type="date" name="nData" id="iData" value="1996-03-06"/>
                     </p>
-                    <p>Foto (CLIQUE NA FOTO PARA ALTERAR):<br />
-                        <img id="cont-img" src="_img/cont-logo.png">
+                    <p><label for="iEmail">E-mail:</label><br />
+                        <input type="email" name="nEmail" id="iEmail" size="35" maxlength="40" 
+                        value="pessoa1@email.com"/>
+                    </p>
+                    <p><label for="iPhone">Telefone:</label><br />
+                        <input type="text" name="nPhone" id="iPhone" size="35" maxlength="40" value="(xx)xxxx-xxxx"/>
                     </p>
                 </fieldset>
 
